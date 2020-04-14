@@ -17,17 +17,27 @@ let aHead = this.head
 this.head = Node(value)
 this.head.next = aHead
 }
-    }
-    addToEnd(){
+    },
+    addToEnd(value){
   if(this.head === null){
-  this.head = Node()
+  this.head = Node(value);
+
+  return;
+  
   }
+  let currently = this.head;
+    while(currently.next !== null ){
+
+      currently = currently.next;ijn 
+    }
+},
+removeFromStart(){
+  this.head = this.head.next
 
 }
-
   
 }
-  
+
 }
 
 
