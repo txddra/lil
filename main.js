@@ -1,7 +1,7 @@
 
 
-const Node  = function(){
-return {}
+const Node  = function(value){
+return {value}
 }
 
 
