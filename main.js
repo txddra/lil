@@ -5,8 +5,31 @@ return {value, next:null }
 }
 
 const Lil = function(){
-  return {head: null}
+  return {
+    head: null,
+
+    addToStart(value){
+if(this.head === null){
+this.head = Node(value)
 }
+else if(this.head !== null){
+let aHead = this.head 
+this.head = Node(value)
+this.head.next = aHead
+}
+    }
+    addToEnd(){
+  if(this.head === null){
+  this.head = Node()
+  }
+
+}
+
+  
+}
+  
+}
+
 
 if (typeof Node === 'undefined') {
   Node = undefined;
